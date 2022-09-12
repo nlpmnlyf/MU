@@ -92,3 +92,18 @@ console.log(`sumTwo: ${sumTwo(...newFoodArray,"hello")}`);
 const arrowFunctionCalcArea = (height, width) => height * width;
 
 console.log(`arrowfunc - ${arrowFunctionCalcArea(10,50)}`);
+
+
+console.log("--- Array Helper ---");
+
+const sisig = foodArray.find((food) => food.name === "Sisig");
+
+console.log("Sisig: ", sisig);
+
+const filteredFood = foodArray.filter((food) => food.price > 9 );
+
+console.log(filteredFood);
+
+const foodArrayMap = newFoodArray.map((food) => { return {food : food.name , price: food.price * 2} });
+
+console.log(foodArrayMap);
